@@ -1,0 +1,311 @@
+@import "../../styles/variables";
+.casesContainer {
+  height: 100%;
+}
+@keyframes loader1 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.cases {
+  display: flex;
+  flex-direction: column;
+}
+.text {
+  padding: 2rem;
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 4rem;
+  line-height: 140%;
+  /* identical to box height, or 90px */
+
+  color: #000000;
+}
+.line {
+  width: 100%;
+  height: auto;
+  border: 1px solid #000000;
+}
+.firstCase {
+  position: relative;
+  background: url("/images/landingPage/cases/Cover.png");
+  background-size: cover;
+  border-radius: 3rem;
+  height: 40rem;
+  margin: 2rem;
+  padding: 2rem;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    transform: scale(1.01);
+    cursor: pointer;
+  }
+}
+.firstCaseType {
+  width: 12rem;
+  height: 2rem;
+  background-color: #ffffff;
+  border-radius: 3rem;
+  font-weight: $portfoliaGeneral-fontweight;
+  font-size: $portfoliaGeneral-fontsize;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.firstCaseContent {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  height: calc(100% - 2rem);
+}
+.firstCaseContentBox {
+  height: 17rem;
+  width: 38rem;
+  background-color: white;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+.CaseContentTopBox {
+  display: flex;
+  justify-content: space-between;
+}
+.firstCaseContentTopic,
+.CaseContentYear {
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  border-radius: 1rem;
+  width: 5rem;
+  height: 2rem;
+  font-weight: $portfoliaGeneral-fontweight;
+  font-size: $portfoliaGeneral-fontsize;
+}
+.CaseContentTitle {
+  font-weight: $portfoliaTitle-fontweight;
+  font-size: $portfoliaTitle-fontsize;
+  margin: 0;
+}
+.arrow {
+  width: auto;
+  height: auto;
+}
+
+.CaseContentDownBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: calc(100% - 2rem);
+}
+.textfieldDownImg {
+  width: 60%;
+}
+.caseContainer {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 20px;
+  padding: 2rem;
+}
+.secondCase {
+  position: relative;
+  background: url("/images/landingPage/cases/Cover2.png");
+  background-size: cover;
+  border-radius: 3rem;
+  height: 40rem;
+  padding: 2rem;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    transform: scale(1.01);
+    cursor: pointer;
+  }
+}
+.secondCaseType {
+  width: 10rem;
+  height: 2rem;
+  background-color: #ffffff;
+  border-radius: 3rem;
+  font-weight: $portfoliaGeneral-fontweight;
+  font-size: $portfoliaGeneral-fontsize;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.secondCaseContent {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  height: calc(100% - 40px);
+}
+.secondCaseContentBox {
+  height: 20rem;
+  width: 40rem;
+  background-color: white;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+.secondCaseContentTopic {
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  border-radius: 1rem;
+  width: 8rem;
+  height: 2rem;
+  font-weight: $portfoliaGeneral-fontweight;
+  font-size: $portfoliaGeneral-fontsize;
+}
+.thirdCaseType {
+  width: 10rem;
+  height: 2rem;
+  border-radius: 3rem;
+  font-weight: $portfoliaGeneral-fontweight;
+  font-size: $portfoliaGeneral-fontsize;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+}
+.thirdCaseTop {
+  display: flex;
+  justify-content: space-between;
+}
+.thirdCaseDown {
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1rem;
+  width: 9rem;
+  height: 2rem;
+  font-weight: $portfoliaGeneral-fontweight;
+  font-size: $portfoliaGeneral-fontsize;
+}
+.thirdCaseContentYear {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid white;
+  border-radius: 1rem;
+  width: 5rem;
+  height: 2rem;
+  font-weight: $portfoliaGeneral-fontweight;
+  font-size: $portfoliaGeneral-fontsize;
+  color: white;
+}
+
+.thirdCase {
+  background: url("/images/landingPage/cases/Cover3.png");
+  background-size: cover;
+  border-radius: 3rem;
+  height: 40rem;
+  padding: 2rem;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  &:hover {
+    transform: scale(1.01);
+    cursor: pointer;
+  }
+}
+.fourthCase {
+  background: url("/images/landingPage/cases/Cover4.png");
+  background-size: cover;
+  border-radius: 3rem;
+  height: 40rem;
+  margin: 2rem;
+  padding: 2rem;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    transform: scale(1.01);
+    cursor: pointer;
+  }
+}
+.fourthCaseType {
+  width: 10rem;
+  height: 2rem;
+  border-radius: 3rem;
+  font-weight: $portfoliaGeneral-fontweight;
+  font-size: $portfoliaGeneral-fontsize;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ffffff;
+  background-color: #ffffff;
+}
+@media screen and (max-width: 1024px) {
+  .firstCase {
+    height: 25rem;
+  }
+  .firstCaseContent {
+    height: 100%;
+  }
+  .firstCaseType,
+  .CaseContentTopBox,
+  .secondCaseType {
+    display: none;
+  }
+  .firstCaseContentBox {
+    height: auto;
+    width: 100%;
+  }
+  .firstCaseContentTitle {
+    font-size: 2rem;
+  }
+  .caseContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+  }
+  .case1 {
+    padding: 2rem;
+  }
+  .case2 {
+    width: 100%;
+    padding: 2rem;
+    margin: 2rem;
+  }
+  .button2 {
+    display: none;
+  }
+  .textfieldTop2 {
+    display: none;
+  }
+  .textfield2 {
+    width: 100%;
+    height: auto;
+  }
+  .caseContainer2 {
+    display: flex;
+    flex-direction: column;
+  }
+  .case3 {
+    width: 100%;
+    margin: 2rem;
+    padding: 2rem;
+  }
+  .button3 {
+    display: none;
+  }
+  .button4 {
+    display: none;
+  }
+  .textfieldTop4 {
+    display: none;
+  }
+  .textfield4 {
+    width: 100%;
+    height: auto;
+  }
+  .caseContainer4 {
+    display: flex;
+    flex-direction: column;
+  }
+}

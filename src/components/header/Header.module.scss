@@ -1,0 +1,90 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  background-color: black;
+  padding: 2rem;
+}
+.logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 1rem;
+}
+
+.logo img {
+  width: 100%;
+}
+
+.menubutton {
+  img {
+    width: 100%;
+    transition: all 0.2s ease-in-out;
+    &:hover {
+      content: url("../../images/menu-1.png");
+      cursor: pointer;
+      transform: scale(1.05, 1.05);
+    }
+  }
+}
+.openedMenu {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  width: 18rem;
+  height: 20rem;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: white;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+.closeButton {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 28px;
+  cursor: pointer;
+}
+.close {
+  display: flex;
+  align-items: center;
+}
+.submenu {
+  font-size: 35px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.menuLink {
+  color: white;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+.arrowLink img {
+  &:hover {
+    cursor: pointer;
+  }
+}
+.contact {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.messenger1 {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 1rem;
+}
+.messenger2 {
+  display: flex;
+  justify-content: space-between;
+}

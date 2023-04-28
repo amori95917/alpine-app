@@ -1,0 +1,156 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  margin: 2rem;
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2)
+    ),
+    url("../../images/bg-footer.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  border-radius: 2rem;
+}
+
+.logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 1rem;
+}
+
+.footerContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.sidebar {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+
+.contacts {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  gap: 5rem;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.text1 {
+  position: relative;
+  margin-top: 1rem;
+  color: #ffffff;
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 4rem;
+  line-height: 140%;
+}
+
+.text2 {
+  position: relative;
+  width: 60%;
+  margin-top: 0;
+  color: #ffffff;
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+}
+
+.discuss {
+  position: relative;
+  margin-top: 2rem;
+}
+
+.copyrightBox {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+
+.copyright1 {
+  position: relative;
+  height: 22px;
+  color: #ffffff;
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 140%;
+  margin-top: 2rem;
+  margin-bottom: 0;
+}
+
+.copyright2 {
+  position: relative;
+  height: 22px;
+  color: #ffffff;
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  margin-top: 0;
+}
+
+.messenger {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.messengerHeader {
+  position: relative;
+  width: 264px;
+  height: 45px;
+  color: #ffffff;
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 140%;
+}
+
+.messengerBody {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.messengerType {
+  position: relative;
+  color: #ffffff;
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 140%;
+  text-decoration: none;
+  width: 126px;
+}
+@media screen and (max-width: 1024px) {
+  .footerContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  .sidebar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .contacts {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+  }
+}

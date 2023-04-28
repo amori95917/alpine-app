@@ -1,0 +1,25 @@
+.descriptionContainer {
+  background: #3c0187;
+  padding: 3rem;
+  margin-top: 4rem;
+  margin-right: 2rem;
+  margin-left: 2rem;
+  border-radius: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &:hover {
+    filter: contrast(80%);
+    cursor: pointer;
+  }
+  animation-delay: 5000ms;
+}
+.description {
+  font-family: Gilroy;
+  font-size: 5rem;
+  font-weight: 600;
+  line-height: 7rem;
+  letter-spacing: 0em;
+  color: white;
+  padding: 2rem;
+}

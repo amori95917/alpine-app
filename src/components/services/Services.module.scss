@@ -1,0 +1,242 @@
+.service {
+  padding: 2rem;
+  background-color: #ffffff;
+}
+
+.serviceTitle {
+  color: #000000;
+  left: 48px;
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 5rem;
+  line-height: 120%;
+}
+
+// p span {
+//   color: #ab2ebf;
+// }
+
+.serviceContent {
+  display: flex;
+  flex-direction: row;
+}
+
+.designerPannel {
+  width: 45%;
+}
+
+.designerImg {
+  width: 80%;
+  border-radius: 50%;
+}
+
+.services {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.service1 {
+  position: relative;
+  padding: 1rem;
+  left: 0px;
+  top: 0px;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 24px;
+  transition: all 1.8s ease;
+  background-image: none;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &:hover {
+    background-image: url("../../images/bg-service.png");
+    animation: slide 2s ease-in-out forwards;
+    cursor: pointer;
+    color: #ffffff;
+  }
+  .service1::before {
+    content: url("../../images/bg-service.png");
+    display: none;
+  }
+}
+@keyframes slide {
+  from {
+    background-position-x: 100%;
+  }
+  to {
+    background-position-x: 0%;
+  }
+}
+
+.serviceTitle1 {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+}
+
+.serviceContent1 {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.service23 {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.service2 {
+  position: relative;
+  width: 50%;
+  padding: 1rem;
+  left: 0px;
+  top: 0px;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 24px;
+}
+
+.serviceTitle2 {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.serviceContent2 {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.service45 {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.btnBack {
+  position: relative;
+  background-color: transparent;
+  border-color: transparent;
+  width: auto;
+  cursor: pointer;
+}
+
+.selectedServiceDescription {
+  height: 284px;
+  margin: 1rem;
+  float: left;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 24px;
+  padding-left: 1rem;
+  display: flex;
+  flex-direction: column;
+
+  &:hover {
+    background-image: url("../../images/bg-service.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: #ffffff;
+  }
+}
+
+.selectedServiceDescriptionTitle {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 140%;
+}
+
+.selectedServiceDescriptionContent {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+}
+
+.selectedServiceDescriptionNumbers {
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+}
+
+.selectedServiceDescriptionNumberTitle {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+}
+
+.selectedServiceDescriptionNumberDetail {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 140%;
+}
+.selectedServiceContent {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .serviceContent {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .designerPannel {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .services {
+    width: 100%;
+  }
+  .service23 {
+    display: flex;
+    flex-direction: column;
+  }
+  .service45 {
+    display: flex;
+    flex-direction: column;
+  }
+  .service2 {
+    width: 100%;
+    padding: 0;
+  }
+  .serviceTitle2 {
+    margin-right: 1rem;
+    margin-left: 1rem;
+  }
+  .serviceContent2 {
+    margin-right: 1rem;
+    margin-left: 1rem;
+  }
+  .selectedServiceContent {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .selectedServiceContent {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
